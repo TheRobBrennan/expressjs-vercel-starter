@@ -1,9 +1,9 @@
 {
   "name": "expressjs-starter",
   "version": "0.0.0",
-  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
     "dev": "nodemon ./src/server.ts",
