@@ -1,7 +1,8 @@
+import 'dotenv/config';
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
-import path from 'path';
+// import path from 'path';
 // import helmet from 'helmet';
 
 // import TTS from './routes/tts';
@@ -28,11 +29,11 @@ server.use(cors());
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
-server.use(express.static(path.join(__dirname, '../public')));
 
-server.get('/api/v1/', (_: Request, res: Response) => {
-  // const formId = process.env.FILLOUT_FORM_ID
-  // res.redirect(`/${formId}/filteredResponses`);
+// FUTURE: Serve static files and other assets if necessary
+// server.use(express.static(path.join(__dirname, '../public')));
+
+server.get('/', (_: Request, res: Response) => {
   res.send('Hello World');
 });
 
