@@ -2,7 +2,9 @@
   "name": "expressjs-vercel-starter",
   "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:coverage:open": "vitest run --coverage && open coverage/index.html",
     "start": "npm run dev",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
@@ -23,8 +25,9 @@
     "@types/helmet": "^4.0.0",
     "@types/morgan": "^1.9.9",
     "@types/multer": "^1.4.11",
-    "@types/node": "^20.10.4",
+    "@types/node": "^20.11.28",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@vitest/coverage-v8": "^1.4.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.55.0",
     "eslint-config-standard-with-typescript": "^42.0.0",
@@ -32,8 +35,10 @@
     "eslint-plugin-n": "^16.3.1",
     "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^3.0.2",
+    "supertest": "^6.3.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "vitest": "^1.4.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
