@@ -37,3 +37,23 @@ Server running on: http://localhost:3000
 ```
 
 In the above example, you can open your browser to [http://localhost:3000](http://localhost:3000) and view the default content from the server 🤓
+
+## Folder Structure
+
+```sh
+.
+├── api
+│   └── index.ts
+├── src
+│   ├── controllers
+│   │   ├── ping.ts
+│   ├── routes
+│   │   ├── ping.ts
+│   └── server.ts
+├── package.json
+├── package-lock.json
+├── README.md
+├── tsconfig.json
+└── vercel.json
+
+```
