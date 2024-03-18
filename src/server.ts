@@ -3,14 +3,19 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 
+// Route handlers
 import Ping from './routes/ping';
 
+// Express server
+const server = express();
 const PORT = process.env.PORT || 3000;
 
-const server = express();
-
+// Logging, CORS, and other middleware
 server.use(morgan('dev'));
-server.use(cors());
+server.use(cors({
+  origin: '*', // Or specify your allowed origins
+  credentials: true, // This will enable the Access-Control-Allow-Credentials header
+}));
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 
