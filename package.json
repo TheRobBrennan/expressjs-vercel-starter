@@ -1,5 +1,5 @@
 {
-  "name": "expressjs-starter",
+  "name": "expressjs-vercel-starter",
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,17 +9,6 @@
     "dev": "nodemon ./src/server.ts",
     "vercel-build": "echo Done running vercel-build."
   },
-  "keywords": [
-    "typescript",
-    "expressjs",
-    "starter-template",
-    "starter-kit",
-    "vercel",
-    "vercel-deployment",
-    "expressjs-typescript-starter",
-    "expressjs-vercel",
-    "expressjs-deployment"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/TheRobBrennan/expressjs-vercel-starter.git"
