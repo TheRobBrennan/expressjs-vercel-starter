@@ -34,7 +34,7 @@ server.use(express.urlencoded({ extended: false }));
 // server.use(express.static(path.join(__dirname, '../public')));
 
 server.get('/', (_: Request, res: Response) => {
-  res.send('Hello World');
+  res.json({ pong: "Hello, World!", timestamp: new Date().toISOString() });
 });
 
 // server.use('/api/v1/files', Files);
@@ -42,7 +42,7 @@ server.get('/', (_: Request, res: Response) => {
 // server.use('/api/v1/tts', TTS);
 
 server.listen(PORT, () =>
-  console.log(`Server running on: http://localhost:${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 );
 
 export default server;
