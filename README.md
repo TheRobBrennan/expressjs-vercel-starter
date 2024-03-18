@@ -1,6 +1,8 @@
 # Welcome
 
-A project to work with [Express.JS](https://expressjs.com), [TypeScript](https://www.typescriptlang.org), and [Vercel](https://vercel.com/).
+An example [Express.JS](https://expressjs.com) and [TypeScript](https://www.typescriptlang.org) application ready for deployment to [Vercel](https://vercel.com/).
+
+You can view the [DEMO](https://expressjs-vercel-starter.vercel.app) [Express.JS](https://expressjs.com) application hosted on [Vercel](https://vercel.com/) at [https://expressjs-vercel-starter.vercel.app](https://expressjs-vercel-starter.vercel.app)
 
 ## Getting started
 
